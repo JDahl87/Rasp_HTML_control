@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href='/static/style.css' />
+  <title>Current Status</title>
+</head>
+
+<body>
+  <h1>Device listin and status</h1>
+
+  {% for pin in pins %}
+  <p>The {{ pins[pin].name }}
+    {% if pins[pin].state == true %}
+    is currently on (<a href="
+</body>
+</html>
