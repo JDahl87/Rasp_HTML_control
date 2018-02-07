@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-import RPI.GPIO as GPIO
+import RPi.GPIO as GPIO
 app = Flask(__name__)
 
 GPIO.setmode(GPIO.BOARD)
@@ -10,7 +10,7 @@ pins = {
 }
 
 #Sets each pin as output and low
-for pin pins:
+for pin in pins:
         GPIO.setup(pin, GPIO.OUT)
         GPIO.output(pin, GPIO.LOW)
 
